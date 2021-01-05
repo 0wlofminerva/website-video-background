@@ -26,7 +26,31 @@
 }
 
 
+/* color Palatte */
 
+/* 
+
+#3B2D15 Dark Brown
+
+#926014 Medium Brown
+
+#FDFAEO Light Brown
+
+#32361C Dark Green 
+
+*/
+
+.dark-brown {
+    color: #3B2D15;
+}
+
+.medium-brown {
+    color: #926014;
+}
+
+.light-brown {
+    color: #FDFAEO;
+}
 
 
 
@@ -34,7 +58,7 @@
 
 
 :root {
-    --overlay--color: #03a9f4;
+    --overlay--color: #FDFAEO;
 }
 
 * {
@@ -75,16 +99,26 @@
     justify-content: space-between;
 }
 
+.monogram {
+    width: 50px;
+    display: inline;
+}
+
 .logo {
     text-transform: uppercase;
     cursor: pointer;
+    display: inline;
+}
+
+.fab {
+    color: #fff;
 }
 
 .toggle {
     position: relative;
     width: 60px;
     height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background: url('./assets//img/bars-solid.svg');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -92,7 +126,7 @@
 }
 
 .toggle.active {
-    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background: url('./assets/img/times-solid.svg');
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
@@ -114,7 +148,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--overlay--color)
+    background: var(--overlay--color);
     mix-blend-mode: overlay;
 }
 
@@ -147,10 +181,10 @@
 .text a {
     display: inline-block;
     font-size: 1em;
-    background: #fff;
+    background: #926014;
     padding: 10px 30px;
     text-decoration: none;
-    color: #111;
+    /* color: #FDFAEO; */
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -208,7 +242,7 @@
 }
 
 .menu ul li a:hover {
-    color: var(--overlay--color)
+    color: var(--overlay--color);
 }
 
 @media(max-width: 991px) {
@@ -224,6 +258,13 @@
 
 .text h3 {
     font-size: 2em;
+}
+
+@media(max-width: 410px) {
+
+    .logo {
+        font-size: 22px;
+    }
 }
 
 
